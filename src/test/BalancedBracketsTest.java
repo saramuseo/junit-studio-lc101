@@ -73,5 +73,10 @@ public class BalancedBracketsTest {
         assertFalse(BalancedBrackets.hasBalancedBrackets("LaunchCode"));
     }
 
+    @Test
+    public void pairedAndNonPairedBracketsReturnsFalse () {
+        assertFalse(BalancedBrackets.hasBalancedBrackets("[]][[]"));
+    }
+
 
 }
